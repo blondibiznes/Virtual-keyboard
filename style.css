@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.container {
+    display:block;
+    margin: 100px auto;   
+}
+ 
+.description,.language {
+    margin: 10px auto;
+    text-align: center;
+    color: #3a3838;
+    font-size: 20px;
+}
+
+.textarea {
+    display: block;
+    width: 790px;
+    height: 200px;
+    margin: 10px auto 10px;
+    padding: 10px;
+    font-size: 18px;
+    color: #444444;
+    border-radius: 10px;
+    outline: none;
+}
+.keyboard {
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 790px;   
+    padding: 5px 0 5px 5px;    
+    background-image: linear-gradient(90deg, #888, #ccc);
+	border-radius: 8px;
+	box-shadow: -6px -6px 14px rgba(0, 0, 0, 0.6), 0 0 0 1px #aaa inset;
+}
+
+.key{   
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center; 
+    color: #777;
+    background: #eee;
+    border-radius: 2px;
+    box-shadow:
+		-0.2em -0.125em 0.125em rgba(0, 0, 0, 0.25), 
+		0 0 0 0.04em rgba(0, 0, 0, 0.3), 
+		0.02em 0.02em 0.02em rgba(0, 0, 0, 0.4) inset, 
+		-0.05em -0.05em 0.02em rgba(255, 255, 255, 0.8) inset;
+    cursor: pointer;
+    user-select: none;       
+    margin: 5px;       
+    transition: all .5s;
+}
+.key:hover {
+    background-color: #9ce6d6;
+}
+ .backspace {
+    width: 120px;
+}
+.tab {
+    width: 50px;
+}
+.del{
+    width: 60px;
+}
+.caps-lock {
+    width: 95px;
+}
+.enter{
+    width: 115px;
+}
+.shift-left{
+    width: 120px;
+}
+.shift-right{
+    width: 90px;
+}
+.win {
+  background: url("./icons/windows.png") center center/contain no-repeat;
+  background-color: transparent; 
+  
+}
+.space {
+    width:370px;
+}
+
+.active {
+    background-color: #9ce6d6;
+    color: #fff;    
+    box-shadow:
+    0.1em 0.1em 0.1em rgba(0, 0, 0, 0.2),
+    0 0 0 0.05em rgba(0, 0, 0, 0.4), 
+    -0.025em -0.05em 0.025em rgba(255, 255, 255, 0.8) inset;
+    transform: scale(0.95, 0.95)
+}
